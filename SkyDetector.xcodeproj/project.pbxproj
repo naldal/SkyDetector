@@ -15,6 +15,7 @@
 		DAD0BED1264FB55D004A499D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD0BECF264FB55D004A499D /* LaunchScreen.storyboard */; };
 		DAD0BEDC264FB55D004A499D /* SkyDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0BEDB264FB55D004A499D /* SkyDetectorTests.swift */; };
 		DAD0BEE7264FB55D004A499D /* SkyDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0BEE6264FB55D004A499D /* SkyDetectorUITests.swift */; };
+		DAD0BEF5264FB873004A499D /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0BEF4264FB873004A499D /* common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DAD0BEE2264FB55D004A499D /* SkyDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0BEE6264FB55D004A499D /* SkyDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyDetectorUITests.swift; sourceTree = "<group>"; };
 		DAD0BEE8264FB55D004A499D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD0BEF4264FB873004A499D /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				DAD0BEC4264FB55D004A499D /* AppDelegate.swift */,
 				DAD0BEC6264FB55D004A499D /* SceneDelegate.swift */,
+				DAD0BEF4264FB873004A499D /* common.swift */,
 				DAD0BEC8264FB55D004A499D /* ViewController.swift */,
 				DAD0BECA264FB55D004A499D /* Main.storyboard */,
 				DAD0BECD264FB55D004A499D /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD0BEF5264FB873004A499D /* common.swift in Sources */,
 				DAD0BEC9264FB55D004A499D /* ViewController.swift in Sources */,
 				DAD0BEC5264FB55D004A499D /* AppDelegate.swift in Sources */,
 				DAD0BEC7264FB55D004A499D /* SceneDelegate.swift in Sources */,
