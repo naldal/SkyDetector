@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0EB7C026562BF800D0ED8E /* SummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EB7BF26562BF800D0ED8E /* SummaryTableViewCell.swift */; };
+		DA0EB7C226562C1700D0ED8E /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0EB7C126562C1700D0ED8E /* ForecastTableViewCell.swift */; };
 		DAD0BEC5264FB55D004A499D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0BEC4264FB55D004A499D /* AppDelegate.swift */; };
 		DAD0BEC7264FB55D004A499D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0BEC6264FB55D004A499D /* SceneDelegate.swift */; };
 		DAD0BEC9264FB55D004A499D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0BEC8264FB55D004A499D /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0EB7BF26562BF800D0ED8E /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
+		DA0EB7C126562C1700D0ED8E /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
 		DAD0BEC1264FB55D004A499D /* SkyDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0BEC4264FB55D004A499D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD0BEC6264FB55D004A499D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA0EB7BE26562BCB00D0ED8E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DA0EB7BF26562BF800D0ED8E /* SummaryTableViewCell.swift */,
+				DA0EB7C126562C1700D0ED8E /* ForecastTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		DAD0BEB8264FB55D004A499D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +114,7 @@
 		DAD0BEC3264FB55D004A499D /* SkyDetector */ = {
 			isa = PBXGroup;
 			children = (
+				DA0EB7BE26562BCB00D0ED8E /* Cell */,
 				DAD0BEC4264FB55D004A499D /* AppDelegate.swift */,
 				DAD0BEC6264FB55D004A499D /* SceneDelegate.swift */,
 				DAD0BEF4264FB873004A499D /* common.swift */,
@@ -261,9 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0EB7C226562C1700D0ED8E /* ForecastTableViewCell.swift in Sources */,
 				DAD0BEF5264FB873004A499D /* common.swift in Sources */,
 				DAD0BEC9264FB55D004A499D /* ViewController.swift in Sources */,
 				DAD0BEC5264FB55D004A499D /* AppDelegate.swift in Sources */,
+				DA0EB7C026562BF800D0ED8E /* SummaryTableViewCell.swift in Sources */,
 				DAD0BEC7264FB55D004A499D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
