@@ -40,6 +40,7 @@
 /* Begin PBXFileReference section */
 		DA0EB7BF26562BF800D0ED8E /* SummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTableViewCell.swift; sourceTree = "<group>"; };
 		DA0EB7C126562C1700D0ED8E /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		DA50B6EF26688DC700BC4E32 /* CurrentWeatherApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CurrentWeatherApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DAD0BEC1264FB55D004A499D /* SkyDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0BEC4264FB55D004A499D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD0BEC6264FB55D004A499D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +92,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		DA50B6EE26688DA700BC4E32 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				DA50B6EF26688DC700BC4E32 /* CurrentWeatherApi.playground */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		DAD0BEB8264FB55D004A499D = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +123,7 @@
 		DAD0BEC3264FB55D004A499D /* SkyDetector */ = {
 			isa = PBXGroup;
 			children = (
+				DA50B6EE26688DA700BC4E32 /* Api */,
 				DA0EB7BE26562BCB00D0ED8E /* Cell */,
 				DAD0BEC4264FB55D004A499D /* AppDelegate.swift */,
 				DAD0BEC6264FB55D004A499D /* SceneDelegate.swift */,
