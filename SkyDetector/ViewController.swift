@@ -13,6 +13,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var ListTableView: UITableView!
     
+    var topInset = CGFloat(0.0)
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if topInset == 0.0 {
+            let firstIndexPath = IndexPath(row: 0, section: 0)
+            if let cell = ListTableView.cellForRow(at: firstIndexPath) {
+                topInset = ListTableView.frame.height - cell.frame.height
+                
+                var inset = ListTableView.contentInset
+                inset.top = topInset
+                ListTableView.contentInset = inset
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
