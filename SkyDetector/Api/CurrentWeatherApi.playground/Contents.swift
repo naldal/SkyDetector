@@ -90,7 +90,7 @@ func fetchCurrentWeather(cityId: Int, completion: @escaping (Result<CurrentWeath
 }
 
 func fetchCurrentWeather(location: CLLocation, completion: @escaping (Result<CurrentWeather, Error>) -> ()) {
-    let urlStr = "https://api.openweathermap.org/data/2.5/weather?id=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=5bd77b49ce77c02a561a120ab02afd5b&lang=kr&units=metric"
+    let urlStr = "https://api.openweathermap.org/data/2.5/weather?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=5bd77b49ce77c02a561a120ab02afd5b&lang=kr&units=metric"
 
     fetch(urlStr: urlStr, completion: completion)
 }
