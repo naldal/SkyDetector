@@ -112,22 +112,22 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aov-Yb-Bm6">
-                                                    <rect key="frame" x="346.5" y="21" width="47.5" height="38"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                                    <rect key="frame" x="365.5" y="21" width="28.5" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41n-w0-V6C">
-                                                    <rect key="frame" x="265.5" y="22" width="71" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <rect key="frame" x="307.5" y="28" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMP-xX-sc0">
-                                                    <rect key="frame" x="215.5" y="20" width="40" height="40"/>
+                                                    <rect key="frame" x="267.5" y="25" width="30" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="p85-mZ-gRV"/>
-                                                        <constraint firstAttribute="width" constant="40" id="z00-7w-n7u"/>
+                                                        <constraint firstAttribute="height" constant="30" id="p85-mZ-gRV"/>
+                                                        <constraint firstAttribute="width" constant="30" id="z00-7w-n7u"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lJE-sf-iuW">
@@ -166,7 +166,7 @@
                                             <outlet property="statusLabel" destination="41n-w0-V6C" id="3vA-Pf-gy9"/>
                                             <outlet property="temperatureLabel" destination="aov-Yb-Bm6" id="62C-y2-hER"/>
                                             <outlet property="timeLabel" destination="R9p-oB-BlY" id="1vm-XV-acP"/>
-                                            <outlet property="weahterImageView" destination="aMP-xX-sc0" id="nsq-ey-F12"/>
+                                            <outlet property="weatherImageView" destination="aMP-xX-sc0" id="OOx-Yp-wRS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

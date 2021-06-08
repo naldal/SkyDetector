@@ -94,7 +94,7 @@ func fetchForecast(cityId: Int, completion: @escaping (Result<Forecast, Error>) 
 }
 
 func fetchForecast(location: CLLocation, completion: @escaping (Result<Forecast, Error>) -> ()) {
-    let urlStr = "https://api.openweathermap.org/data/2.5/forecast?id=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=5bd77b49ce77c02a561a120ab02afd5b&lang=kr&units=metric"
+    let urlStr = "https://api.openweathermap.org/data/2.5/forecast?lat=\(location.coordinate.latitude)&lon=\(location.coordinate.longitude)&appid=5bd77b49ce77c02a561a120ab02afd5b&lang=kr&units=metric"
 
     fetch(urlStr: urlStr, completion: completion)
 }

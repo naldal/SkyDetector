@@ -33,7 +33,7 @@ extension ViewController: UITableViewDataSource {
         case 0:
             return 1
         case 1:
-            return 0
+            return WeatherDataSource.shared.forecastList.count
         default:
             return 0
         }
@@ -54,6 +54,15 @@ extension ViewController: UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastTableViewCell", for: indexPath) as! ForecastTableViewCell
+        
+        let target = WeatherDataSource.shared.forecastList[indexPath.row]
+        cell.dateLabel.text = target.date.dateString
+        cell.timeLabel.text = target.date.timeString
+        cell.weatherImageView.image = UIImage(named: target.icon)
+        cell.statusLabel.text = target.weather
+        cell.temperatureLabel.text = target.temperature.temperatureString
+        
+        
         return cell
     }
     

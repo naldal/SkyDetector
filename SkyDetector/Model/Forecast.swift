@@ -31,3 +31,10 @@ struct Forecast: Codable {
     
     let list: [ListItem]
 }
+
+struct ForecastData {
+    let date: Date
+    let icon: String
+    let weather: String
+    let temperature: Double
+}
