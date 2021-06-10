@@ -174,6 +174,10 @@
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="0xi-In-4jg"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-iV-rYu">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -182,6 +186,7 @@
                             <constraint firstItem="9AY-na-LaM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ga6-fY-fxT"/>
                             <constraint firstAttribute="bottom" secondItem="dTi-kF-65v" secondAttribute="bottom" id="ITt-Sd-5fB"/>
                             <constraint firstItem="Pw8-rE-9fw" firstAttribute="trailing" secondItem="dTi-kF-65v" secondAttribute="trailing" id="P3d-4Q-Qwb"/>
+                            <constraint firstItem="nuK-iV-rYu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Prf-4u-5Ba"/>
                             <constraint firstItem="Pw8-rE-9fw" firstAttribute="bottom" secondItem="dTi-kF-65v" secondAttribute="bottom" id="PwD-R0-fCY"/>
                             <constraint firstItem="Pw8-rE-9fw" firstAttribute="top" secondItem="dTi-kF-65v" secondAttribute="top" id="V39-jM-cRF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6XC-rD-FcE" secondAttribute="bottom" id="WxU-px-0Aa"/>
@@ -192,11 +197,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6XC-rD-FcE" secondAttribute="trailing" id="hrW-hh-zGP"/>
                             <constraint firstItem="Pw8-rE-9fw" firstAttribute="leading" secondItem="dTi-kF-65v" secondAttribute="leading" id="l0u-kO-Ndg"/>
                             <constraint firstItem="dTi-kF-65v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oUQ-5E-3B8"/>
+                            <constraint firstItem="nuK-iV-rYu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qR7-wJ-MVz"/>
                             <constraint firstItem="9AY-na-LaM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uLn-65-BFe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ListTableView" destination="6XC-rD-FcE" id="GbK-nk-i4F"/>
+                        <outlet property="loader" destination="nuK-iV-rYu" id="WNJ-8L-33o"/>
                         <outlet property="locationLabel" destination="QU1-rZ-eI1" id="GMV-Zd-Sqf"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,7 @@ import CoreLocation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     @IBOutlet weak var locationLabel: UILabel!
     
     @IBOutlet weak var ListTableView: UITableView!
@@ -34,6 +35,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ListTableView.alpha = 0.0
+        loader.alpha = 1.0
+        
         ListTableView.backgroundColor = .clear
         ListTableView.separatorStyle = .none
         ListTableView.showsVerticalScrollIndicator = false
@@ -48,6 +52,11 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: WeatherDataSource.weatherInfoDidUpdate, object: nil, queue: .main) { (noti) in
             self.ListTableView.reloadData()
             self.locationLabel.text = LocationManager.shared.currentLocationTitle
+            
+            UIView.animate(withDuration: 0.3) {
+                self.ListTableView.alpha = 1.0
+                self.loader.alpha = 0.0
+            }
         }
     }
 }
