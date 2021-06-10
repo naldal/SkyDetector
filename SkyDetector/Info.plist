@@ -2,11 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>현재 위치의 날씨 정보를 표시합니다</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>현재 위치의 날씨 정보를 표시합니다</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>현재 위치의 날씨 정보를 표시합니다</string>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string>현재 위치의 날씨 정보를 표시합니다</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
@@ -72,5 +70,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>현재 위치의 날씨 정보를 표시합니다</string>
 </dict>
 </plist>

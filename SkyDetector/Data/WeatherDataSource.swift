@@ -10,7 +10,17 @@ import CoreLocation
 
 class WeatherDataSource {
     static let shared = WeatherDataSource()
-    private init() {}
+    private init() {
+        NotificationCenter.default.addObserver(forName: LocationManager.currentLocationDidUpdate, object: nil, queue: .main) { (noti) in
+            if let location = noti.userInfo?["location"] as? CLLocation {
+                self.fetch(location: location) {
+                    NotificationCenter.default.post(name: Self.weatherInfoDidUpdate, object: nil)
+                }
+            }
+        }
+    }
+    
+    static let weatherInfoDidUpdate = Notification.Name(rawValue: "weatherInfoDidUpdate")
     
     var summary: CurrentWeather?
     var forecastList = [ForecastData]()

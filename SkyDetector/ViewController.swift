@@ -10,6 +10,7 @@ import CoreLocation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var locationLabel: UILabel!
     
     @IBOutlet weak var ListTableView: UITableView!
     
@@ -37,12 +38,17 @@ class ViewController: UIViewController {
         ListTableView.separatorStyle = .none
         ListTableView.showsVerticalScrollIndicator = false
         
-        let location = CLLocation(latitude: 37.498206, longitude: 127.02761)
-        WeatherDataSource.shared.fetch(location: location) {
-            self.ListTableView.reloadData()
-        }
+//        let location = CLLocation(latitude: 37.498206, longitude: 127.02761)
+//        WeatherDataSource.shared.fetch(location: location) {
+//            self.ListTableView.reloadData()
+//        }
         
         LocationManager.shared.updateLocation()
+        
+        NotificationCenter.default.addObserver(forName: WeatherDataSource.weatherInfoDidUpdate, object: nil, queue: .main) { (noti) in
+            self.ListTableView.reloadData()
+            self.locationLabel.text = LocationManager.shared.currentLocationTitle
+        }
     }
 }
 
