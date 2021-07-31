@@ -53,4 +53,4 @@
  
 ## 📱 기능 동작
 
-<img width="46%" src="https://github.com/naldal/readmegifs/blob/master/sg.gif?raw=true"/>
+<img width="49%" src="https://github.com/naldal/readmegifs/blob/master/sg.gif?raw=true"/>
