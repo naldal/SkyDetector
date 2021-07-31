@@ -42,4 +42,4 @@ Made by 송하민 <br>
 ```
 
 ### 기능 동작
-  
+<img width="38%" src="https://github.com/naldal/readmegifs/blob/master/sg.gif?raw=true"/>
